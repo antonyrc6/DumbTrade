@@ -1,0 +1,63 @@
+{% set project = "portfoli0" %}
+
+{% block body %}
+<div style="text-align:center;">
+ <h1>Real Time Stocks</h1>
+ <h3>Simple version (for example only)</h3>
+ <div id="Stocks" style="margin-top: 200px">
+  
+ </div>
+</div>
+<script>
+
+
+const ticker = ["AAPL", "MSFT", "NFLX"];
+const api_key = "b7fa84afea6e45609dd289c0f21b9f62";
+let stocksdiv=document.getElementById("Stocks");
+
+
+function getStockPrice(tickerSymbol, api) {
+ const url = `https://api.twelvedata.com/price?symbol=${tickerSymbol}&apikey=${api}`;
+ return fetch(url)
+   .then(response => response.json())
+   .then(data => data.price.slice(0, -3))
+   .catch(error => console.error(error));
+}
+
+
+function getStockQuote(tickerSymbol, api) {
+ const url = `https://api.twelvedata.com/quote?symbol=${tickerSymbol}&apikey=${api}`;
+ return fetch(url)
+   .then(response => response.json())
+   .catch(error => console.error(error));
+}
+
+
+for (let i=0; i<ticker.length; i++){
+ // i=0 is the first # it starts at, it ends at i<ticker.length.
+ console.log(ticker[i])
+ getStockQuote(ticker[i], api_key)
+     .then(stockData => {
+       getStockPrice(ticker[i], api_key)
+         .then(stockPrice => {
+           const exchange = stockData.exchange;
+           const name = stockData.name;
+
+
+           const nameElement = document.createElement("h2")
+           const nameNode = document.createTextNode(name + " (" + exchange + ")")
+           nameElement.appendChild(nameNode)
+           const priceElement = document.createElement("p")
+           const priceNode = document.createTextNode("$" + stockPrice)
+           priceElement.appendChild(priceNode)
+
+
+           stocksdiv.appendChild(nameElement)
+           stocksdiv.appendChild(priceElement)
+           console.log(name, stockPrice);
+       });
+   });
+ }
+</script>
+</div>
+{% endblock %}

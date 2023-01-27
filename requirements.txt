@@ -1,0 +1,8 @@
+flask
+requests
+SQLAlchemy
+Werkzeug
+flask_login
+flask_sqlalchemy
+flask_migrate
+flask_restful

@@ -1,0 +1,264 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: rgb(0, 14, 63);
+}
+
+#navbar a {
+  float: center;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: rgb(243, 243, 243);
+}
+
+#navbar a.active {
+  background-color: #04AA6D;
+  color: rgb(152, 152, 152);
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 110px;
+}
+
+</style>
+</head>
+<body>
+
+<div id="navbar">
+  <head>
+    <title>Text alignment</title>
+    <style>
+        p{text-align: center;}
+        
+    </style>
+</head>
+<p style="color:white;">Your Wallet: 20,099.42 <small><small><small>USD</small></small></small></p>
+</div>
+
+<head>
+    <style>
+    #customers {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    #customers td, #customers th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #customers tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #customers tr:hover {background-color: #ddd;}
+    
+    #customers th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #000956;
+      color: white;
+    }
+    </style>
+    </head>
+    <body>
+    
+
+    
+    <table id="customers">
+      <tr>
+        <th>STOCK NAME</th>
+        <th>AMOUNT PUT IN</th>
+        <th>MULTIPLIER</th>
+        <th>OUTCOME AMOUNT</th>
+      </tr>
+      <tr>
+        <td>Apple Inc (NASDAQ: AAPL)</td>
+        <td>$425.58</td>
+        <td style="color:green">X 1.7</td>
+        <td>$723.49</td>
+      </tr>
+      <tr>
+        <td>Alphabet Inc Class A (NASDAQ: GOOGL)</td>
+        <td>$97.52</td>
+        <td style="color:red">X 0.6</td>
+        <td>$58.51</td>
+      </tr>
+      <tr>
+        <td>Microsoft Corp (NASDAQ: MSFT)</td>
+        <td>$496.00</td>
+        <td style="color:green">X 3.0</td>
+        <td>$1,488</td>
+      </tr>
+      <tr>
+        <td>NuVasive, Inc. (NASDAQ: NUVA)</td>
+        <td>$44.95</td>
+        <td style="color:red">X 0.2</td>
+        <td>$8.99</td>
+      </tr>
+      <tr>
+        <td>Surgalign Holdings Inc (NASDAQ: SRGA)</td>
+        <td>$18.36</td>
+        <td style="color:green">X 2.8</td>
+        <td>$51.40</td>
+      </tr>
+      <tr>
+        <td>Datadog Inc (NASDAQ: DDOG)</td>
+        <td>$76.00</td>
+        <td style="color:green">X 1.84</td>
+        <td>$139.84</td>
+      </tr>
+      <tr>
+        <td>Ford Motor Company (NASDAQ: F)</td>
+        <td>$12.92</td>
+        <td style="color:red">X 0.7</td>
+        <td>$9.04</td>
+      </tr>
+      <tr>
+        <td>Snap Inc (NASDAQ: SNAP)</td>
+        <td>$30.57</td>
+        <td style="color:green">X 1.7</td>
+        <td>$51.97</td>
+      </tr>
+      <tr>
+        <td>Costco Wholesale Corporation (NASDAQ: COST)</td>
+        <td>$3986.40</td>
+        <td style="color:green">X 3.2</td>
+        <td>12,756.48</td>
+      </tr>
+      <tr>
+        <td>Total</td>
+        <td>$5,188.30</td>
+        <td style="color:green">X 2.95</td>
+        <td style="color:green"></tdstyle>$15,287.72</td>
+      </tr>
+    </table>
+    
+    </body>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        
+        .callout {
+          position: fixed;
+          bottom: 35px;
+          right: 20px;
+          margin-left: 20px;
+          max-width: 300px;
+        }
+        
+        .callout-header {
+          padding: 45px 15px;
+          background: rgb(255, 255, 255);
+          font-size: 30px;
+          color: white;
+        }
+        
+        .callout-container {
+          padding: 5px;
+          background-color: rgb(255, 255, 255);
+          color: black
+        }
+        
+        .closebtn {
+          position: absolute;
+          top: 5px;
+          right: 15px;
+          color: white;
+          font-size: 30px;
+          cursor: pointer;
+        }
+        
+        .closebtn:hover {
+          color: lightgrey;
+        }
+        </style>
+        </head>
+        <body>
+      
+        <div class="callout">
+          <div class="callout-container">
+            <head>
+              <meta name="viewport" content="width=device-width, initial-scale=1">
+              <style>
+              .button {
+                border-radius: 4px;
+                background-color: #00144d;
+                border: none;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 20px;
+                padding: 20px;
+                width: 300px;
+                transition: all 0.5s;
+                cursor: pointer;
+                margin: 0px;
+              }
+              
+              .button span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+              }
+              
+              .button span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+              }
+              
+              .button:hover span {
+                padding-right: 25px;
+              }
+              
+              .button:hover span:after {
+                opacity: 1;
+                right: 0;
+              }
+              </style>
+              </head>
+              <body>
+              <button class="button" onclick="window.location.href='http://127.0.0.1:5000/projects/gamee/';"><span>Re-Invest Your Earnings</span></button>
+              
+              </body>
+          </div>
+        </div>
+        
+        </body>
+        
