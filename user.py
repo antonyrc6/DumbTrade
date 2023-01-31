@@ -1,4 +1,5 @@
 import sqlite3
+
 conn = sqlite3.connect('user.db')
 
 c = conn.cursor()
@@ -14,7 +15,7 @@ c.execute("""CREATE TABLE customers (
 
 # print("committed")
 
-conn.commit()
+# conn.commit()
 
-conn.close()
+# conn.close()
 
