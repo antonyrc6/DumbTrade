@@ -32,3 +32,7 @@ def rec():
 @app_projects.route('/gamee/')
 def gamee():
     return render_template("gamee.html")
+
+@app_projects.route('/StockInformation/')
+def StockInformation():
+    return render_template("StockInformation.html")
