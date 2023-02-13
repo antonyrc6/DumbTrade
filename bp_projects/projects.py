@@ -36,3 +36,7 @@ def gamee():
 @app_projects.route('/StockInformation/')
 def StockInformation():
     return render_template("StockInformation.html")
+
+@app_projects.route("Learning Module")
+def StockInformation():
+    return render_template("LearningModule.html")
