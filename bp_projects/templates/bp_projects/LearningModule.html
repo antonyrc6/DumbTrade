@@ -1,0 +1,132 @@
+
+
+
+<body style="background-color:rgb(36, 35, 35);"></body>
+
+<h1 style="color:rgb(223, 205, 205); font-family: gill sans, sans-serif;">Information about various stocks</h1>
+
+<head>
+    <title>This Is Our Learning Module! </title>
+    <style>
+      .text-container {
+        margin-bottom: 10px;
+      }
+      .button{
+         width: 100px;
+         height: 50px;
+         margin-top: 20px;}
+    </style>
+    <script>
+      function toggleText(id) {
+        var text = document.getElementById(id);
+        if (text.style.display === "none") {
+          text.style.display = "block";
+        } else {
+          text.style.display = "none";
+        }
+      }
+    </script>
+</head>
+  <body>
+    <div class="text-container">
+      <button onclick="toggleText('text1'); color:rgb(223, 205, 205) "></button>
+      <div id="text1" style="display:none; color:rgb(223, 205, 205);">Tesla Inc is an automotive and energy company. It designs, develops, manufactures, sells, and leases electric vehicles and energy generation and storage systems. The company produces and sells the Model Y, Model 3, Model X, Model S, Cybertruck, Tesla Semi, and Tesla Roadster vehicles. Tesla also installs and maintains energy systems and sells solar electricity; and offers end-to-end clean energy products, including generation, storage, and consumption. It markets and sells vehicles to consumers through a network of company owned stores and galleries. The company has manufacturing facilities in the US, Germany and China and has operations across Asia Pacific and Europe. Tesla is headquartered in Austin, Texas, the US. They also excel in electrifying your home. They create solar panels so that the future can run on sustainable energy. </div>
+    </div>
+    <div class="text-container">
+      <button onclick="toggleText('text2')">Amazon</button>
+      <div id="text2" style="display:none; color:rgb(223, 205, 205);">Originally started as an online book selling company, Amazon has morphed into an internet-based business enterprise that is largely focused on providing e-commerce, cloud computing, digital streaming and artificial intelligence services. Following an Amazon-to-buyer sales approach, the company offers a monumental product range and inventory, enabling consumers to buy just about anything, including clothing, beauty supplies, gourmet food, jewelry, books, movies, electronics, pet supplies, furniture, toys, garden supplies and household goods. Headquartered in Seattle, Amazon has individual websites, software development centers, customer service centers, data centers and fulfillment centers around the world.</div>
+    </div>
+    <div class="text-container">
+      <button onclick="toggleText('text3')">Microsoft</button>
+      <div id="text3" style="display:none; color:rgb(223, 205, 205);">Text for button 3</div>
+    </div>
+    <div class="text-container">
+      <button onclick="toggleText('text4')">Google</button>
+      <div id="text4" style="display:none; color:rgb(223, 205, 205);">Text for button 4</div>
+    </div>
+    <div class="text-container">
+        <button onclick="toggleText('text5')">Apple</button>
+        <div id="text5" style="display:none; color:rgb(223, 205, 205);">Text for button 5</div>
+      </div>
+      <div class="text-container">
+        <button onclick="toggleText('text6')">Philips</button>
+        <div id="text6" style="display:none; color:rgb(223, 205, 205);">Text for button 6</div>
+      </div>
+  </body>
+
+
+
+
+
+ <h1 style="color:rgb(223, 205, 205); font-family: gill sans, sans-serif;">Stock Recommendation Quiz</h1> 
+ 
+ <form>
+    <fieldset id="question1" style="color:white;">
+      <legend>Question 1</legend>
+      <label for="question1" style="color:white;">What is your prefered risk to reward ratio?</label><br>
+      <input type="radio" name="question1" value="true" required> High<br>
+      <input type="radio" name="question1" value="false"> Low
+      <br>
+      <button type="button" onclick="showQuestion2()">Continue</button>
+    </fieldset>
+    <br>
+
+    
+    <fieldset id="question2" style="display:none; color:white;">
+      <legend>Question 2</legend>
+      <label for="question1" style="color:white;">Do you want prefer short or long term trades?</label><br>
+      <input type="radio" name="question2" value="true" required> Short<br>
+      <input type="radio" name="question2" value="false"> Long
+      <br>
+      <button type="button" onclick="showQuestion3()">Continue</button>
+    </fieldset>
+    <br><br>
+    
+    
+    <fieldset id="question3" style="display:none; color:white;">
+      <legend>Question 3</legend>
+      <label for="question1" style="color:white;">What type of Stocks do you prefer? Tech, Oil, Health, etc.</label><br>
+      <input type="radio" name="question3" value="true" required> Environmentally friendly<br>
+      <input type="radio" name="question3" value="false"> No preference
+      <br>
+      <button type="button" onclick="showQuestion4()">Continue</button>
+    </fieldset>
+    <br><br>
+    
+    
+    <fieldset id="question4" style="display:none; color:white;">
+      <legend>Question 4</legend>
+      <label for="question1" style="color:white;">What type of Stocks do you prefer? Tech, Oil, Health, etc.</label><br>
+      <input type="radio" name="question4" value="true" required> True<br>
+      <input type="radio" name="question4" value="false"> False
+      <br>
+      <button type="button" onclick="showQuestion5()">Continue</button>
+    </fieldset>
+    <br><br>
+    
+    
+    <fieldset id="question5" style="display:none; color:white;">
+      <legend>Question 5</legend>
+      <label for="question1" style="color:white;">Preferance for what type of companies?</label><br>
+      <input type="radio" name="question5" value="true" required> True<br>
+      <input type="radio" name="question5" value="false"> False
+    </fieldset>
+    
+    <script>
+      function showQuestion2() {
+          document.getElementById("question2").style.display = "block";
+      }
+      function showQuestion3() {
+          document.getElementById("question3").style.display = "block";
+      }
+      function showQuestion4() {
+          document.getElementById("question4").style.display = "block";
+      }
+      function showQuestion5() {
+          document.getElementById("question5").style.display = "block";
+      }
+    </script>
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+  
