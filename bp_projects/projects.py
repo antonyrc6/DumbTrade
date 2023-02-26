@@ -40,7 +40,3 @@ def StockInformation():
 @app_projects.route("/LearningModule/")
 def LearningModule():
     return render_template("LearningModule.html")
-
-@app_projects.route("/IntroductionToStocks/")
-def IntroductionToStocks():
-    return render_template("IntroductionToStocks.html")
